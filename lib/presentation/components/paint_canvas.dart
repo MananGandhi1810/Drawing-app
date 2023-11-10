@@ -2,10 +2,12 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
-class PaintCanvas extends CustomPainter {
-  PaintCanvas({required this.points, required this.color});
+import '../../models/line_model.dart';
 
-  final List<Map<Color, List<Offset>>> points;
+class PaintCanvas extends CustomPainter {
+  PaintCanvas({required this.lines, required this.color});
+
+  final List<LineModel> lines;
   final Color color;
 
   @override
@@ -13,11 +15,10 @@ class PaintCanvas extends CustomPainter {
     Paint paint = Paint()
       ..style = PaintingStyle.fill
       ..strokeWidth = 5;
-    for (var linePoints in points) {
-      paint.color = linePoints.keys.first;
-
-      canvas.drawPoints(
-          PointMode.polygon, linePoints.values.toList()[0], paint);
+    for (var line in lines) {
+      paint.color = line.color;
+      paint.strokeWidth = line.strokeWidth;
+      canvas.drawPoints(PointMode.polygon, line.points, paint);
     }
   }
 
