@@ -185,13 +185,14 @@ class _HomePageState extends State<HomePage> {
                     color: Colors.grey,
                   ),
                   width: MediaQuery.of(context).size.width * 0.1,
-                  height: MediaQuery.of(context).size.height * 0.8,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       RotatedBox(
                         quarterTurns: 3,
-                        child: Container(
+                        child: SizedBox(
                           width: MediaQuery.of(context).size.width * 0.7,
                           child: Slider(
                             label: "Opacity: ${selectedColor.opacity}",
@@ -211,7 +212,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                       RotatedBox(
                         quarterTurns: 3,
-                        child: Container(
+                        child: SizedBox(
                           width: MediaQuery.of(context).size.width * 0.7,
                           child: Slider(
                             label: "Stroke Width: $selectedStrokeWidth",

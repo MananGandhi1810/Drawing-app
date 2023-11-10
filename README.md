@@ -8,7 +8,7 @@ To run this project, you need to have flutter installed on your machine. Then, c
 - [x] Change the color of the brush
 - [x] Undo/Redo
 - [x] Clear the canvas
-- [ ] Change the brush size
+- [x] Change the brush size
 - [ ] Change the background color
 - [ ] Online multiplayer
 
