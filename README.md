@@ -1,16 +1,16 @@
-# custompainter_drawing_app
-
-A new Flutter project.
+Drawing app, built with flutter
 
 ## Getting Started
+To run this project, you need to have flutter installed on your machine. Then, clone this repository and run `flutter run` in the project directory.
 
-This project is a starting point for a Flutter application.
+## Features
+- [x] Draw on the canvas
+- [x] Change the color of the brush
+- [x] Undo/Redo
+- [x] Clear the canvas
+- [ ] Change the brush size
+- [ ] Change the background color
+- [ ] Online multiplayer
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
