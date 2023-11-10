@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 
 import '../models/line_model.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class DrawingPage extends StatefulWidget {
+  const DrawingPage({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<DrawingPage> createState() => _DrawingPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _DrawingPageState extends State<DrawingPage> {
   List<LineModel> lines = [
     LineModel(points: [], color: Colors.red, strokeWidth: 5)
   ];

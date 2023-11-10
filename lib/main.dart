@@ -1,14 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart';
 
-import 'firebase_options.dart';
-import 'presentation/home_page.dart';
+import 'presentation/drawing_page.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
   runApp(const RootApp());
 }
 
@@ -21,7 +15,7 @@ class RootApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: const HomePage(),
+      home: const DrawingPage(),
     );
   }
 }
