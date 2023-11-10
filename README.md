@@ -1,4 +1,4 @@
-Drawing app, built with flutter
+# Drawing app, built with flutter
 
 ## Getting Started
 To run this project, you need to have flutter installed on your machine. Then, clone this repository and run `flutter run` in the project directory.
